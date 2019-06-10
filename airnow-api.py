@@ -2,6 +2,7 @@ import config   #config for api keys
 import requests #for api requests
 import json     #for json funcs
 
+
 from flask import Flask, jsonify, request, redirect, url_for
 from flask_cors import CORS
 
@@ -117,7 +118,7 @@ def findHighestPollutant(packed_json):
 MAIN
 '''
 def main():
-  db.create_all()  #for local hosting
+  #db.create_all()  #for local hosting
   app.run()
 
 if __name__ == '__main__':
